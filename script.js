@@ -129,15 +129,52 @@ const clamp = (value, min, max) =>
   Math.max(min, Math.min(max, Number(value) || 0));
 
 const icons = {
-  
-github: '<path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.14.68-3.8-1.33-3.8-1.33-.51-1.3-1.25-1.25-1.25-1.25-1.03-.7.08-.68.08-.68 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.51-2.51-.28-5.14-1.25-5.14-5.58 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.08 1.15A10.7 10.7 0 0 1 12 6.47c.95 0 1.9.13 2.8.38 2.13-1.45 3.08-1.15 3.08-1.15.61 1.55.23 2.7.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.34-2.64 5.3-5.15 5.57.4.35.76 1.03.76 2.08v2.74c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/>',
-
+  github: '<path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.14.68-3.8-1.33-3.8-1.33-.51-1.3-1.25-1.25-1.25-1.25-1.03-.7.08-.68.08-.68 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.51-2.51-.28-5.14-1.25-5.14-5.58 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.08 1.15A10.7 10.7 0 0 1 12 6.47c.95 0 1.9.13 2.8.38 2.13-1.45 3.08-1.15 3.08-1.15.61 1.55.23 2.7.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.34-2.64 5.3-5.15 5.57.4.35.76 1.03.76 2.08v2.74c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/>',
   discord: '<path d="M19.7 5.2a18 18 0 0 0-4.4-1.4l-.5 1a16 16 0 0 0-5.6 0l-.5-1a18 18 0 0 0-4.4 1.4C1.5 9.4.7 13.4 1.1 17.3a18 18 0 0 0 5.4 2.7l1.2-2a11 11 0 0 1-1.7-.8l.4-.3a13 13 0 0 0 11.2 0l.4.3-1.7.8 1.2 2a18 18 0 0 0 5.4-2.7c.5-4.5-.8-8.4-3.2-12.1ZM8.3 14.9c-1.1 0-1.9-1-1.9-2.1s.8-2.1 1.9-2.1c1 0 1.9 1 1.9 2.1s-.9 2.1-1.9 2.1Zm7.4 0c-1.1 0-1.9-1-1.9-2.1s.8-2.1 1.9-2.1c1 0 1.9 1 1.9 2.1s-.9 2.1-1.9 2.1Z"/>',
-
   youtube: '<path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2a31 31 0 0 0 0 9.6 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 0-9.6ZM9.7 15.4V8.6l6 3.4-6 3.4Z"/>',
-
   globe: '<path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm7.8 9h-3.1a16 16 0 0 0-1.3-6.1A8 8 0 0 1 19.8 11ZM12 4c1.1 1.4 2.1 3.8 2.5 7h-5C9.9 7.8 10.9 5.4 12 4Zm-3.4.9A16 16 0 0 0 7.3 11H4.2a8 8 0 0 1 4.4-6.1ZM4.2 13h3.1c.2 2.4.7 4.5 1.3 6.1h-3.1A8 8 0 0 1 4.2 13ZM12 20c-1.1-1.4-2.1-3.8-2.5-7h5c-.4 3.2-1.4 5.6-2.5 7Zm3.4-.9c.6-1.6 1.1-3.7 1.3-6.1h3.1a8 8 0 0 1-4.4 6.1Z"/>'
 };
+
+function openGame(project) {
+  if (!project.url || project.status !== 'playable') return;
+
+  const tab = window.open('about:blank', '_blank');
+
+  if (!tab) {
+    window.open(project.url, '_blank', 'noopener');
+    return;
+  }
+
+  try {
+    const doc = tab.document;
+
+    doc.title = project.name;
+    doc.documentElement.style.cssText =
+      'width:100%;height:100%;margin:0;background:#08080d;';
+
+    doc.body.style.cssText =
+      'width:100%;height:100%;margin:0;overflow:hidden;background:#08080d;';
+
+    const iframe = doc.createElement('iframe');
+
+    iframe.src = project.url;
+    iframe.title = project.name;
+    iframe.style.cssText =
+      'position:fixed;inset:0;width:100%;height:100%;border:0;display:block;background:#08080d;';
+
+    iframe.setAttribute(
+      'allow',
+      'fullscreen; autoplay; gamepad; clipboard-read; clipboard-write'
+    );
+
+    iframe.allowFullscreen = true;
+
+    doc.body.appendChild(iframe);
+  } catch (error) {
+    console.warn('Could not embed game:', error);
+    tab.location.replace(project.url);
+  }
+}
 
 function init() {
   $('#displayName').textContent = CONFIG.name;
@@ -182,6 +219,7 @@ function init() {
   if (CONFIG.music && music) {
     music.src = CONFIG.music;
     music.volume = clamp(CONFIG.musicVolume, 0, 1);
+
     $('#audioBtn').title = 'Toggle background music';
     $('#audioBtn').setAttribute(
       'aria-label',
@@ -216,19 +254,18 @@ function init() {
     links.append(element);
   });
 
-  
-fetch('https://countapi.mileshilliard.com/api/v1/hit/historystudyguide_zaddy_profile_visits')
-  .then(response => {
-    if (!response.ok) throw new Error('Counter unavailable');
-    return response.json();
-  })
-  .then(data => {
-    $('#views').textContent = Number(data.value).toLocaleString();
-  })
-  .catch(() => {
-    $('#views').textContent = '—';
-  });
-
+  fetch('https://countapi.mileshilliard.com/api/v1/hit/historystudyguide_zaddy_profile_visits')
+    .then(response => {
+      if (!response.ok) throw new Error('Counter unavailable');
+      return response.json();
+    })
+    .then(data => {
+      $('#views').textContent =
+        Number(data.value).toLocaleString();
+    })
+    .catch(() => {
+      $('#views').textContent = '—';
+    });
 }
 
 function enter() {
@@ -298,11 +335,26 @@ function render() {
       card.href = project.url;
       card.target = '_blank';
       card.rel = 'noopener noreferrer';
+
       card.classList.add('port-clickable');
+
       card.setAttribute(
         'aria-label',
         'Play ' + project.name
       );
+
+      card.addEventListener('click', event => {
+        if (
+          event.button !== 0 ||
+          event.ctrlKey ||
+          event.metaKey ||
+          event.shiftKey ||
+          event.altKey
+        ) return;
+
+        event.preventDefault();
+        openGame(project);
+      });
     } else {
       card.classList.add('port-unreleased');
     }
@@ -333,8 +385,8 @@ function render() {
     title.className = 'port-title';
     title.textContent = project.name;
 
-content.append(title);
-card.append(content);
+    content.append(title);
+    card.append(content);
 
     if (project.date) {
       const date = document.createElement('span');
