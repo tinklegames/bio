@@ -37,6 +37,13 @@ const CONFIG = {
 
   projects: [
     {
+      name: 'C.A.T.S.',
+      status: 'wip',
+      url: '',
+      image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FRksBUbqPS0c%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=5ae82a97cbb2fa78f81dfe5798d0c225f61ae182394beab8612078013344b35f&ipo=images',
+      date: 'Coming 11/18/26'
+    },
+    {
       name: 'MOUSE: P.I. For Hire',
       status: 'wip',
       url: '',
@@ -48,6 +55,27 @@ const CONFIG = {
       status: 'wip',
       url: '',
       image: 'https://media.pocketgamer.com/artwork/na-29425-1702175384/littlenightmares-ios-android-six-on-a-table.jpg',
+      date: 'Coming 11/19/26'
+    },
+    {
+      name: 'Superliminal',
+      status: 'wip',
+      url: '',
+      image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages4.alphacoders.com%2F118%2F1181163.jpg&f=1&nofb=1&ipt=209c136d348d932a24885593cd0ac90853318a743518c74f1819ec09df906bf3&ipo=images',
+      date: 'Coming Soon'
+    },
+    {
+      name: 'Mouthwashing',
+      status: 'wip',
+      url: '',
+      image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.relyonhorror.com%2Fwp-content%2Fuploads%2F2024%2F08%2FMouthwashing-Keyart-1024x482.jpg&f=1&nofb=1&ipt=97b39215593bb8548e3d27d6e3b96b4d551903d85197ac8c947856a65aa337f6&ipo=images',
+      date: 'Coming Soon'
+    },
+    {
+      name: 'Firewatch',
+      status: 'wip',
+      url: '',
+      image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.altarofgaming.com%2Fwp-content%2Fuploads%2F2024%2F08%2Ffirewatch-game-cover-altar-of-gaming.jpg&f=1&nofb=1&ipt=bffb655578c33bb74cc96cbd4d7157593f6b171ab966d44fa79893125b9982d5&ipo=images',
       date: 'Coming Soon'
     },
     {
