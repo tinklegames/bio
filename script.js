@@ -289,18 +289,53 @@ function init() {
     links.append(element);
   });
 
-  fetch('https://countapi.mileshilliard.com/api/v1/hit/historystudyguide_zaddy_profile_visits')
-    .then(response => {
-      if (!response.ok) throw new Error('Counter unavailable');
-      return response.json();
-    })
-    .then(data => {
-      $('#views').textContent =
-        Number(data.value).toLocaleString();
-    })
-    .catch(() => {
-      $('#views').textContent = '—';
-    });
+  
+  // Unique visitor counter
+  const COUNTER_KEY = 'historystudyguide_zaddy_profile_visits';
+  const VISITOR_KEY = 'zaddy_unique_visitor_v1';
+  const COUNTER_API = 'https://countapi.mileshilliard.com/api/v1';
+
+  async function updateVisitorCount() {
+    const views = $('#views');
+
+    try {
+      // Check if this browser has already been counted
+      const alreadyVisited =
+        localStorage.getItem(VISITOR_KEY) === 'true';
+
+      // New visitors increase the count.
+      // Returning visitors only retrieve the current total.
+      const endpoint = alreadyVisited ? 'get' : 'hit';
+
+      const response = await fetch(
+        `${COUNTER_API}/${endpoint}/${COUNTER_KEY}`,
+        { cache: 'no-store' }
+      );
+
+      if (!response.ok) {
+        throw new Error('Visitor counter unavailable');
+      }
+
+      const data = await response.json();
+      const count = Number(data.value);
+
+      if (!Number.isFinite(count)) {
+        throw new Error('Invalid visitor count');
+      }
+
+      // Remember this browser only after a successful hit
+      if (!alreadyVisited) {
+        localStorage.setItem(VISITOR_KEY, 'true');
+      }
+
+      views.textContent = count.toLocaleString();
+    } catch (error) {
+      console.warn('Visitor counter error:', error);
+      views.textContent = '—';
+    }
+  }
+
+  updateVisitorCount();
 }
 
 function enter() {
