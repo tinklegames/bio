@@ -65,13 +65,6 @@ const CONFIG = {
       date: 'Coming Soon'
     },
     {
-      name: 'Mouthwashing',
-      status: 'wip',
-      url: '',
-      image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.relyonhorror.com%2Fwp-content%2Fuploads%2F2024%2F08%2FMouthwashing-Keyart-1024x482.jpg&f=1&nofb=1&ipt=97b39215593bb8548e3d27d6e3b96b4d551903d85197ac8c947856a65aa337f6&ipo=images',
-      date: 'Coming Soon'
-    },
-    {
       name: 'Firewatch',
       status: 'wip',
       url: '',
