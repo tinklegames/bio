@@ -37,13 +37,6 @@ const CONFIG = {
 
   projects: [
     {
-      name: 'C.A.T.S.',
-      status: 'wip',
-      url: '',
-      image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FRksBUbqPS0c%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=5ae82a97cbb2fa78f81dfe5798d0c225f61ae182394beab8612078013344b35f&ipo=images',
-      date: 'Coming 11/21/26'
-    },
-    {
       name: 'Little Nightmares',
       status: 'wip',
       url: '',
@@ -147,6 +140,13 @@ const CONFIG = {
       url: 'https://nawsif.github.io/hctapsid/',
       image: 'https://images-ext-1.discordapp.net/external/EKLzlZGu3_Z4JoCQW5RLeAIBSDKoHE73OuShTc-rZfk/https/image.api.playstation.com/vulcan/ap/rnd/202508/0621/a316285a09eceee300a8f0cb007599cf20aa6404a105a05a.jpg?format=webp&width=3072&height=1727',
       date: '11/14/26'
+    },
+    {
+      name: 'C.A.T.S.',
+      status: 'playable',
+      url: 'https://cats.zaddy.space',
+      image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FRksBUbqPS0c%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=5ae82a97cbb2fa78f81dfe5798d0c225f61ae182394beab8612078013344b35f&ipo=images',
+      date: '11/20/26'
     }
   ]
 };
