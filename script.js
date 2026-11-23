@@ -154,6 +154,13 @@ const CONFIG = {
       url: 'https://oml.zaddy.space/',
       image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgmcharts.com%2Fassets%2Fgame-icons%2F5378110-90a1c5bcedca1f6ec8c665331ddcb0977671bac3ca44414312640f59b1f31228.jpg%3Fv%3D1795075969&f=1&nofb=1&ipt=75b18be57e0069b55d8b78123e59d19463e13b02188c7416381807b402d5e0d0&ipo=images',
       date: '11/23/26'
+    },
+    {
+      name: 'Melantonin',
+      status: 'playable',
+      url: 'https://melatonin.zaddy.space/',
+      image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmuarrab.com%2Fimages%2Fgames%2Fpatches%2FMelatonin.webp&f=1&nofb=1&ipt=0df571c396b0b6f5d8ac7c9f73809ab0634fe8c5b7558d00d7a52e0506b99c5c&ipo=images',
+      date: '11/23/26'
     }
   ]
 };
