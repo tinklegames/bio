@@ -41,7 +41,7 @@ const CONFIG = {
       status: 'wip',
       url: '',
       image: 'https://media.pocketgamer.com/artwork/na-29425-1702175384/littlenightmares-ios-android-six-on-a-table.jpg',
-      date: 'Coming 11/22/26'
+      date: 'Coming 11/24/26'
     },
     {
       name: 'MOUSE: P.I. For Hire',
@@ -147,6 +147,13 @@ const CONFIG = {
       url: 'https://cats.zaddy.space',
       image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FRksBUbqPS0c%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=5ae82a97cbb2fa78f81dfe5798d0c225f61ae182394beab8612078013344b35f&ipo=images',
       date: '11/20/26'
+    },
+    {
+      name: 'One More Lawn',
+      status: 'playable',
+      url: 'https://oml.zaddy.space/',
+      image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgmcharts.com%2Fassets%2Fgame-icons%2F5378110-90a1c5bcedca1f6ec8c665331ddcb0977671bac3ca44414312640f59b1f31228.jpg%3Fv%3D1795075969&f=1&nofb=1&ipt=75b18be57e0069b55d8b78123e59d19463e13b02188c7416381807b402d5e0d0&ipo=images',
+      date: '11/23/26'
     }
   ]
 };
