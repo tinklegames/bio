@@ -1,4 +1,3 @@
-
 const CONFIG = {
   name: 'zaddy',
   handle: '@z4ch.dc',
@@ -67,6 +66,7 @@ const CONFIG = {
     {
       name: 'Chained Together',
       status: 'wip',
+      aboutBlank: true,
       url: '',
       image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-ext.fanatical.com%2Fproduction%2Fproduct%2F1280x720%2F869c68ea-1403-46bb-8779-d209ce80d73a.jpeg&f=1&nofb=1&ipt=d5dee8dbbdf1fed73ae4e57f372517e724396e8adb9dcdd1230e9c0a411c7aa2&ipo=images',
       date: 'Coming Soon'
@@ -74,6 +74,7 @@ const CONFIG = {
     {
       name: 'Machine Party',
       status: 'playable',
+      aboutBlank: true,
       url: 'https://nawsif.github.io/html/mpweb',
       image: 'https://images-ext-1.discordapp.net/external/agnIFimcnK87FaoIn1Z7vy1I2BL0slaLGk6oDWDPsvs/%3Fw%3D322%26h%3D181%26c%3D7%26r%3D0%26o%3D7%26dpr%3D2%26pid%3D1.7%26rm%3D3/https/th.bing.com/th/id/OIP.jgW5YMaac70uJqiwNYEb_QHaEK?format=webp',
       date: '9/19/26'
@@ -81,6 +82,7 @@ const CONFIG = {
     {
       name: 'ROUNDS',
       status: 'playable',
+      aboutBlank: true,
       url: 'https://nawsif.github.io/html/rounds',
       image: 'https://images-ext-1.discordapp.net/external/w1GeU2bvVwZLWekEGeDPfsIFVg0O_ncKuAAZVhwD1mc/%3Fw%3D308%26h%3D180%26c%3D7%26r%3D0%26o%3D7%26dpr%3D2%26pid%3D1.7%26rm%3D3/https/th.bing.com/th/id/OIP.ixufs-PVaOC7JjSI__xcrAHaEK?format=webp',
       date: '10/10/26'
@@ -88,6 +90,7 @@ const CONFIG = {
     {
       name: 'Mimic Party',
       status: 'playable',
+      aboutBlank: true,
       url: 'https://nawsif.github.io/html/mimicparty',
       image: 'https://images-ext-1.discordapp.net/external/X7HtHZLZkxnY8dSYaFZ5uwKosM1m0w_Jcxwh1TExPRo/%3Ft%3D1789831835/https/shared.fastly.steamstatic.com/store_item_assets/steam/apps/5053820/cb42d784567e89c1c409e49856ece32c9cf8ab36/header.jpg?format=webp',
       date: '10/11/26'
@@ -95,6 +98,7 @@ const CONFIG = {
     {
       name: 'ADOFAI',
       status: 'playable',
+      aboutBlank: true,
       url: 'https://nawsif.github.io/html/adofai',
       image: 'https://images-ext-1.discordapp.net/external/FA45ANO6h_bKnSyWHEuhEUEumsy7j4Rp-ntDDzZCPyU/%3Fformat%3Dwebp/https/images-ext-1.discordapp.net/external/KVG0NgE5R92181t0YJ4YPJ6jxIKBiHl_bsRYbr8X_4c/%253Fw%253D304%2526h%253D180%2526c%253D7%2526r%253D0%2526o%253D7%2526dpr%253D2%2526pid%253D1.7%2526rm%253D3/https/th.bing.com/th/id/OIP.g18SCN-qzluilpBSrYqD9gHaEK?format=webp',
       date: '10/11/26'
@@ -102,6 +106,7 @@ const CONFIG = {
     {
       name: 'Happy Wheels',
       status: 'playable',
+      aboutBlank: true,
       url: 'https://nawsif.github.io/html/happywheels',
       image: 'https://images-ext-1.discordapp.net/external/8RCU-0C6YP1krvxl6vtmYgwaMA1LjrKtMXiNMHdHiOQ/%3Fw%3D321%26h%3D180%26c%3D7%26r%3D0%26o%3D7%26dpr%3D2%26pid%3D1.7%26rm%3D3/https/th.bing.com/th/id/OIP._TNiOtwp6k1jTaGs_BmfbgHaEK?format=webp',
       date: '10/14/26'
@@ -109,6 +114,7 @@ const CONFIG = {
     {
       name: 'Angry Birds Star Wars II',
       status: 'playable',
+      aboutBlank: false,
       url: 'https://nawsif.github.io/absw2/',
       image: 'https://images-ext-1.discordapp.net/external/ntxXZb9K9tzkjQhKnXorB5_lYrgkZyLAaDW8WoPysSs/%3Fcb%3D20130715193347/https/static.wikia.nocookie.net/starwars/images/b/b5/AngryBirdsStar_WarsII-Logo.png/revision/latest?format=webp',
       date: '10/29/26'
@@ -116,6 +122,7 @@ const CONFIG = {
     {
       name: 'The Happyhills Homicide 2: Out For Blood',
       status: 'playable',
+      aboutBlank: true,
       url: 'https://nawsif.github.io/hhh2/',
       image: 'https://images-ext-1.discordapp.net/external/no-ByBTJYQE0DVPwdsSkZ1PfEHxzJk4BUqbAkQ6_rmo/https/static.wixstatic.com/media/b06961_4e852a7f02ab43c8b9f2e49b40f466b0~mv2.jpg/v1/fill/w_1000%2Ch_563%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01/b06961_4e852a7f02ab43c8b9f2e49b40f466b0~mv2.jpg?format=webp',
       date: '11/4/26'
@@ -123,6 +130,7 @@ const CONFIG = {
     {
       name: 'Find The Needle',
       status: 'playable',
+      aboutBlank: true,
       url: 'https://nawsif.github.io/FindTheNeedle/',
       image: 'https://images-ext-1.discordapp.net/external/eX-pDcDkEahVPrZtyCJtkliMTpJCgOU45A0ArpEkem0/https/618b31e8.delivery.rocketcdn.me/wp-content/uploads/2026/10/Find-The-Needle-01.jpg?format=webp',
       date: '11/7/26'
@@ -130,6 +138,7 @@ const CONFIG = {
     {
       name: 'Turbo Dismount',
       status: 'playable',
+      aboutBlank: true,
       url: 'https://nawsif.github.io/turbodismount/',
       image: 'https://images-ext-1.discordapp.net/external/xNMUCq3p9rP_fW--SsuQpcrV3pkexYv8seN9Y-Tl8eE/%3Fcrop%3D1%3A1%252Csmart%26format%3Djpg%26auto%3Dwebp%26quality%3D80/https/assets-prd.ignimgs.com/2025/04/11/turbodismount-1744413039637.jpg?format=webp',
       date: '11/10/26'
@@ -137,6 +146,7 @@ const CONFIG = {
     {
       name: 'Dispatch',
       status: 'playable',
+      aboutBlank: true,
       url: 'https://nawsif.github.io/hctapsid/',
       image: 'https://images-ext-1.discordapp.net/external/EKLzlZGu3_Z4JoCQW5RLeAIBSDKoHE73OuShTc-rZfk/https/image.api.playstation.com/vulcan/ap/rnd/202508/0621/a316285a09eceee300a8f0cb007599cf20aa6404a105a05a.jpg?format=webp&width=3072&height=1727',
       date: '11/14/26'
@@ -144,6 +154,7 @@ const CONFIG = {
     {
       name: 'C.A.T.S.',
       status: 'playable',
+      aboutBlank: false,
       url: 'https://cats.zaddy.space',
       image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FRksBUbqPS0c%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=5ae82a97cbb2fa78f81dfe5798d0c225f61ae182394beab8612078013344b35f&ipo=images',
       date: '11/20/26'
@@ -151,6 +162,7 @@ const CONFIG = {
     {
       name: 'My Singing Monsters',
       status: 'playable',
+      aboutBlank: false,
       url: 'https://msm.zaddy.space',
       image: 'https://i.kym-cdn.com/entries/icons/facebook/000/039/942/mysingingmonstersheader.jpg',
       date: '11/22/26'
@@ -158,6 +170,7 @@ const CONFIG = {
     {
       name: 'One More Lawn',
       status: 'playable',
+      aboutBlank: true,
       url: 'https://oml.zaddy.space/',
       image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgmcharts.com%2Fassets%2Fgame-icons%2F5378110-90a1c5bcedca1f6ec8c665331ddcb0977671bac3ca44414312640f59b1f31228.jpg%3Fv%3D1795075969&f=1&nofb=1&ipt=75b18be57e0069b55d8b78123e59d19463e13b02188c7416381807b402d5e0d0&ipo=images',
       date: '11/23/26'
@@ -165,6 +178,7 @@ const CONFIG = {
     {
       name: 'Melantonin',
       status: 'playable',
+      aboutBlank: true,
       url: 'https://melatonin.zaddy.space/',
       image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmuarrab.com%2Fimages%2Fgames%2Fpatches%2FMelatonin.webp&f=1&nofb=1&ipt=0df571c396b0b6f5d8ac7c9f73809ab0634fe8c5b7558d00d7a52e0506b99c5c&ipo=images',
       date: '11/23/26'
@@ -187,10 +201,17 @@ const icons = {
 function openGame(project) {
   if (!project.url || project.status !== 'playable') return;
 
+  // false = open the actual URL directly in a new tab
+  if (project.aboutBlank === false) {
+    window.open(project.url, '_blank', 'noopener,noreferrer');
+    return;
+  }
+
+  // true (or omitted) = open inside an about:blank tab
   const tab = window.open('about:blank', '_blank');
 
   if (!tab) {
-    window.open(project.url, '_blank', 'noopener');
+    window.open(project.url, '_blank', 'noopener,noreferrer');
     return;
   }
 
@@ -303,7 +324,6 @@ function init() {
     links.append(element);
   });
 
-  
   // Unique visitor counter
   const COUNTER_KEY = 'historystudyguide_zaddy_profile_visits';
   const VISITOR_KEY = 'zaddy_unique_visitor_v1';
@@ -313,12 +333,9 @@ function init() {
     const views = $('#views');
 
     try {
-      // Check if this browser has already been counted
       const alreadyVisited =
         localStorage.getItem(VISITOR_KEY) === 'true';
 
-      // New visitors increase the count.
-      // Returning visitors only retrieve the current total.
       const endpoint = alreadyVisited ? 'get' : 'hit';
 
       const response = await fetch(
@@ -337,7 +354,6 @@ function init() {
         throw new Error('Invalid visitor count');
       }
 
-      // Remember this browser only after a successful hit
       if (!alreadyVisited) {
         localStorage.setItem(VISITOR_KEY, 'true');
       }
