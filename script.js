@@ -153,7 +153,7 @@ const CONFIG = {
       status: 'playable',
       url: 'https://msm.zaddy.space',
       image: 'https://i.kym-cdn.com/entries/icons/facebook/000/039/942/mysingingmonstersheader.jpg',
-      date: '11/20/26'
+      date: '11/22/26'
     },
     {
       name: 'One More Lawn',
