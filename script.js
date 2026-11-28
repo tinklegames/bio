@@ -36,11 +36,18 @@ const CONFIG = {
 
   projects: [
     {
+      name: 'Octodad: Dadliest Catch',
+      status: 'wip',
+      url: '',
+      image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.nintendo.com%2Feu%2Fmedia%2Fimages%2F10_share_images%2Fgames_15%2Fwiiu_download_software_5%2FSI_WiiUDS_OctodadDadliestCatch_image1600w.jpg&f=1&nofb=1&ipt=f7a2c6864bd5719f8f02a841ef6a8156f61d5f6203ea29340634a48cfc79b8cb&ipo=images',
+      date: 'Coming Very Soon'
+    },
+    {
       name: 'Little Nightmares',
       status: 'wip',
       url: '',
       image: 'https://media.pocketgamer.com/artwork/na-29425-1702175384/littlenightmares-ios-android-six-on-a-table.jpg',
-      date: 'Coming 11/24/26'
+      date: 'Coming Soon'
     },
     {
       name: 'MOUSE: P.I. For Hire',
@@ -61,14 +68,6 @@ const CONFIG = {
       status: 'wip',
       url: '',
       image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.altarofgaming.com%2Fwp-content%2Fuploads%2F2024%2F08%2Ffirewatch-game-cover-altar-of-gaming.jpg&f=1&nofb=1&ipt=bffb655578c33bb74cc96cbd4d7157593f6b171ab966d44fa79893125b9982d5&ipo=images',
-      date: 'Coming Soon'
-    },
-    {
-      name: 'Chained Together',
-      status: 'wip',
-      aboutBlank: true,
-      url: '',
-      image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-ext.fanatical.com%2Fproduction%2Fproduct%2F1280x720%2F869c68ea-1403-46bb-8779-d209ce80d73a.jpeg&f=1&nofb=1&ipt=d5dee8dbbdf1fed73ae4e57f372517e724396e8adb9dcdd1230e9c0a411c7aa2&ipo=images',
       date: 'Coming Soon'
     },
     {
